@@ -3,13 +3,10 @@ IF EXIST %ProgramFiles%\McAfee\Agent\cmdagent.exe (
 GOTO 64bit
 
 :64bit
-
 ECHO Running ASCI for 64-bit.
 
 "%ProgramFiles%\McAfee\Agent\cmdagent.exe" /c
-
 "%ProgramFiles%\McAfee\Agent\cmdagent.exe" /p
-
 "%ProgramFiles%\McAfee\Agent\cmdagent.exe" /i
 
 )
@@ -19,11 +16,9 @@ ELSE (
 GOTO 32bit
 
 :32bit
-
 ECHO Running ASCI for 32-bit.
 
 "%ProgramFiles%\McAfee\Common Framework\cmdagent.exe" /c
-
 "%ProgramFiles%\McAfee\Common Framework\cmdagent.exe" /p
 
 )
